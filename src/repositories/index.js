@@ -1,2 +1,5 @@
+import BookingRepository from "./booking-repositories";
 
-export default {}
+export default {
+    BookingRepository
+}

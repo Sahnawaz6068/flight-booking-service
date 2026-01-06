@@ -122,14 +122,6 @@ exports.Prisma.TransactionIsolationLevel = makeStrictEnum({
   Serializable: 'Serializable'
 });
 
-exports.Prisma.UserScalarFieldEnum = {
-  id: 'id',
-  userName: 'userName',
-  email: 'email',
-  password: 'password',
-  phoneNumber: 'phoneNumber'
-};
-
 exports.Prisma.AirplaneScalarFieldEnum = {
   id: 'id',
   modelNumber: 'modelNumber',
@@ -138,27 +130,17 @@ exports.Prisma.AirplaneScalarFieldEnum = {
   updatedAt: 'updatedAt'
 };
 
-exports.Prisma.SeatScalarFieldEnum = {
-  id: 'id',
-  airplaneId: 'airplaneId',
-  row: 'row',
-  col: 'col',
-  type: 'type',
-  createdAt: 'createdAt',
-  updatedAt: 'updatedAt'
-};
-
-exports.Prisma.CityScalarFieldEnum = {
-  id: 'id',
-  name: 'name'
-};
-
 exports.Prisma.AirportScalarFieldEnum = {
   id: 'id',
   name: 'name',
   code: 'code',
   address: 'address',
   cityId: 'cityId'
+};
+
+exports.Prisma.CityScalarFieldEnum = {
+  id: 'id',
+  name: 'name'
 };
 
 exports.Prisma.FlightScalarFieldEnum = {
@@ -174,6 +156,24 @@ exports.Prisma.FlightScalarFieldEnum = {
   totalSeats: 'totalSeats',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
+};
+
+exports.Prisma.SeatScalarFieldEnum = {
+  id: 'id',
+  airplaneId: 'airplaneId',
+  row: 'row',
+  col: 'col',
+  type: 'type',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+};
+
+exports.Prisma.UserScalarFieldEnum = {
+  id: 'id',
+  userName: 'userName',
+  email: 'email',
+  password: 'password',
+  phoneNumber: 'phoneNumber'
 };
 
 exports.Prisma.SortOrder = {
@@ -198,12 +198,12 @@ exports.SeatType = exports.$Enums.SeatType = {
 };
 
 exports.Prisma.ModelName = {
-  User: 'User',
   Airplane: 'Airplane',
-  Seat: 'Seat',
-  City: 'City',
   Airport: 'Airport',
-  Flight: 'Flight'
+  City: 'City',
+  Flight: 'Flight',
+  Seat: 'Seat',
+  User: 'User'
 };
 
 /**
